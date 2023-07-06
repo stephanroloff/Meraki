@@ -1,0 +1,146 @@
+@import './variables/headings/headings.scss';
+
+html body {
+
+    .editor-styles-wrapper,
+    .main-container {
+        // .wp-site-blocks>*+*,
+        // .is-layout-flow>*+*,
+        // .is-layout-constrained>*+*,
+        // .editor-styles-wrapper .is-layout-flow>*,
+        // .editor-styles-wrapper .is-layout-flow>*+*,
+        // .editor-styles-wrapper .is-layout-constrained>*,
+        // .editor-styles-wrapper .is-layout-constrained>*+* {
+
+        //Paragraph
+        p {
+            font-size: $p-font-size;
+            margin: 20px 0;
+        }
+
+        //Headings
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        h1.wp-block-heading,
+        h2.wp-block-heading,
+        h3.wp-block-heading,
+        h4.wp-block-heading,
+        h5.wp-block-heading,
+        h6.wp-block-heading {
+            // color: var(--wp--preset--color--dark-blue);
+            margin: 20px 0;
+            padding: 0;
+            line-height: 1.2em;
+            letter-spacing: normal;
+        }
+
+        //H1
+        h1,
+        h1.wp-block-heading {
+            font-size: $h1-font-size;
+        }
+
+        //H2
+        h2,
+        h2.wp-block-heading {
+            font-size: $h2-font-size;
+        }
+
+        //H3
+        h3,
+        h3.wp-block-heading {
+            font-size: $h3-font-size;
+        }
+
+        //H4
+        h4,
+        h4.wp-block-heading {
+            font-size: $h4-font-size;
+        }
+
+        //H5
+        h5,
+        h5.wp-block-heading {
+            font-size: $h5-font-size;
+        }
+
+        //H6
+        h6,
+        h6.wp-block-heading {
+            font-size: $h6-font-size;
+        }
+
+        //Link
+        p {
+            a {}
+        }
+
+        //Unorder List
+        ul {
+            margin: 20px 0;
+
+            li {
+                margin: 10px 0;
+            }
+        }
+
+        //Input
+        input {
+            // border: 2px solid red;
+            // background-color: gray;
+            // color: white;
+
+            &::placeholder {
+                // color: blue;
+                // font-weight: 200;
+            }
+        }
+
+        //Text Area
+        textarea {
+            resize: none;
+            // border: 2px solid red;
+            // background-color: gray;
+            // color: white;
+
+            &::placeholder {
+                // color: blue;
+                // font-weight: 200;
+            }
+        }
+
+        //Label
+        label {}
+
+        //Button WP Block
+        .wp-block-buttons {
+            margin: 20px 0;
+
+            .wp-block-button {
+                background-color: rgb(255, 128, 0);
+                border-radius: 25px;
+
+                a,
+                .wp-block-button__link {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: rgb(191, 96, 2);
+                }
+            }
+        }
+
+        //Button Input
+        input[type="button"] {
+            background-color: rgb(255, 128, 0);
+            border-radius: 25px;
+            border: none;
+        }
+
+    }
+}

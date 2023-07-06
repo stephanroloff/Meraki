@@ -1,0 +1,15 @@
+.main-container>* {
+    // margin: 0 auto;
+    width: 100%;
+    max-width: var(--wp--style--global--content-size);
+}
+
+.alignwide {
+    width: 100%;
+    max-width: var(--wp--style--global--wide-size);
+}
+
+.alignfull {
+    width: 100%;
+    max-width: 100%;
+}

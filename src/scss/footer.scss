@@ -1,0 +1,32 @@
+@import 'variables/footer/footer-variables.scss';
+
+.footer-container {
+    width: 100%;
+    margin: 40px 0;
+    height: 200px;
+    margin: 0;
+    background-color: $footer-background-color;
+    font-family: $footer-font-style;
+    font-size: $footer-font-size;
+
+    .footer-columns{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .footer-menu{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $footer-font-color;
+                        
+                        &:hover{
+                            color: $footer-hover-font-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

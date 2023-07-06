@@ -1,0 +1,22 @@
+{
+  "name": "meraki",
+  "description": "\"Doing something with Soul, creativity, or Love. To put something of yourself into your work\"",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "wp-scripts start",
+    "start:hot": "wp-scripts start --hot",
+    "build": "wp-scripts build",
+    "lint:css": "wp-scripts lint-style"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/scripts": "^26.0.0",
+    "@wordpress/stylelint-config": "^21.12.0"
+  }
+}

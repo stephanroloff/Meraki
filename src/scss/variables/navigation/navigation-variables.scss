@@ -1,0 +1,21 @@
+@import '../global-variables.scss';
+
+//Navigation Bar
+$nav-background-color: $primary-color;
+$nav-font-family: $primary-font-family;
+$nav-font-color: $white-color;
+$nav-font-hover-color: $secondary-color;
+$nav-font-size: $font-size-extra-small;
+//Logo 
+$logo-width: 80px;
+$logo-height: 80px;
+//Submenu
+$submenu-background-color: $white-color;
+$submenu-font-color: $black-color;
+$submenu-font-size: 14px;
+
+//Burger Menu
+$burger-background-color: $white-color;
+$burger-menu-breakpoint: 700px;
+$burger-font-color: $black-color;
+$burger-font-size: $font-size-medium;

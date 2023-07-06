@@ -1,0 +1,35 @@
+.main-container>*,
+.is-root-container>.wp-block,
+//Columns
+.is-root-container>.wp-block-columns,
+.wp-block-columns,
+.wp-block-group {
+    width: 100%;
+    max-width: $wide-width-content;
+    margin: 0 auto;
+
+    &[data-align="wide"],
+    //Define Full Width Gutenberg Blocks in Editor
+    &.alignwide {
+        //Define Wide Width Gutenberg Blocks
+        max-width: $max-width-content;
+    }
+
+    &[data-align="full"],
+    //Define Full Width Gutenberg Blocks in Editor
+    &.alignfull {
+        //Define Full Width Gutenberg Blocks
+        max-width: 100%;
+    }
+
+    //EN PERIODO DE TEST--------------------------------------------
+    &.is-reusable {
+        max-width: 100% !important;
+
+        &>* {
+            max-width: 100% !important;
+        }
+    }
+
+    //--------------------------------------------------------------
+}
