@@ -1,4 +1,14 @@
 setTimeout(function(){
+    let pageBlack = document.querySelector('.page-id-138');
+    let pageWhite = document.querySelector('.page-id-140');
+
+    pageBlack.style.backgroundColor = "#202020"
+    pageWhite.style.backgroundColor = "#ffffff"
+
+}, 0)
+
+
+setTimeout(function(){ 
 
     //Calling classes
     let body = document.querySelector('body');

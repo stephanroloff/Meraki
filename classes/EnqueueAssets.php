@@ -19,7 +19,7 @@ if(! class_exists('MerakiTheme\EnqueueAssets')){
         function scripts_and_styles(){
    
             wp_enqueue_style('main_style', get_theme_file_uri('/build/index.css'));
-            wp_enqueue_script('main_js', get_theme_file_uri('/build/index.js'), array('jquery','wp-blocks'), '1.0', true );
+            wp_enqueue_script('main_js', get_theme_file_uri('/build/index.js'), array('jquery','wp-blocks'), '1.0', false );  // Si lo pongo en false puedo hacer transitions
          }
          
          function scripts_and_styles_editor(){   
