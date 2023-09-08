@@ -14,6 +14,8 @@ jobs:
           npm run build
       - name: copy file via ssh password
         uses: appleboy/scp-action@master
+        run: |
+          ssh expero@dedi5235.your-server.de -p222
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
