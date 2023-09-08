@@ -1,29 +1,23 @@
-name: Mi Flujo de Trabajo
-
+name: scp files
 on:
   push:
-    branches:
-      - main
-
+    branches: [main]
 jobs:
-  deploy:
+  build:
+    name: Deployment and Build
     runs-on: ubuntu-latest
-
-    env: # Define la variable de entorno MY_PORT
-      PORT: ${{ secrets.PORT }}
-
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v2
-
-      - name: Configura SSH
-        uses: webfactory/ssh-agent@v0.7.0
-
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Despliega en servidor
+      - uses: actions/checkout@master
+      - name: npm install and npm run build (Theme)
         run: |
-          # En este punto, puedes usar $MY_PORT para referirte al puerto en tu código o comandos.
-          echo "El puerto configurado es: $MY_PORT"
-          # Ejecuta tus comandos de despliegue aquí, utilizando $MY_PORT según sea necesario.
+          npm install
+          npm run build
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "./"
+          target: ${{ secrets.TARGET }}
