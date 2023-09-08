@@ -24,8 +24,7 @@ setTimeout(function(){
             console.log('Negro"!!');
             mainContainer.classList.add("fade-in-black");
             mainContainer.classList.add("fade-in");
-            // body.style.backgroundColor = '#202020'
-            body.style.backgroundColor = '#3c184d'
+            body.style.backgroundColor = '#202020'
         }
     });
 
@@ -45,6 +44,26 @@ setTimeout(function(){
             e.preventDefault();
     
             body.classList.add('fade-out-black-to-white');
+            mainContainer.classList.remove("fade-in");
+            mainContainer.classList.add("fade-out");
+    
+
+
+            // Espera 2 segundos (2000 milisegundos) antes de redirigir
+            setTimeout(function() {
+                // Obtiene la URL de destino del atributo "href" del enlace
+                var destino = element.querySelector('a').getAttribute('href');
+                // Redirige a la página de destino después de la animación
+                window.location.href = destino;
+            }, 100); 
+        })
+    });
+
+    pagesBlack.forEach(element => {
+        element.addEventListener('click',(e)=>{
+            e.preventDefault();
+    
+            body.classList.add('fade-out-white-to-black');
             mainContainer.classList.remove("fade-in");
             mainContainer.classList.add("fade-out");
     
