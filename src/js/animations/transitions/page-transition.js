@@ -21,20 +21,20 @@ setTimeout(function(){
     pagesBlack.forEach(element => {
         if(element.classList.contains('current_page_item'))
         {
+            body.style.backgroundColor = '#202020'
             console.log('Negro"!!');
             mainContainer.classList.add("fade-in-black");
             mainContainer.classList.add("fade-in");
-            body.style.backgroundColor = '#202020'
         }
     });
 
     pagesWhite.forEach(element => {
         if(element.classList.contains('current_page_item'))
         {
+            body.style.backgroundColor = '#ffffff'
             console.log('Blanco!');
             mainContainer.classList.add("fade-in-white");
             mainContainer.classList.add("fade-in");
-            body.style.backgroundColor = '#ffffff'
         }
     });
 
