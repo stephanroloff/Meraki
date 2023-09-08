@@ -24,7 +24,8 @@ setTimeout(function(){
             console.log('Negro!');
             mainContainer.classList.add("fade-in-black");
             mainContainer.classList.add("fade-in");
-            body.style.backgroundColor = '#202020'
+            // body.style.backgroundColor = '#202020'
+            body.style.backgroundColor = '#3c184d'
         }
     });
 
