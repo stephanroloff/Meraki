@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@master
       - name: npm install and npm run build (Theme)
         run: |
+          composer install
           npm install
           npm run build
       - name: copy file via ssh password
