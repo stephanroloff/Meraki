@@ -1,0 +1,9 @@
+/* Define la animación de fade-in */
+@keyframes fadeOut {
+    from {
+    opacity: 1; /* La opacidad inicial es 0 (invisible) */
+    }
+    to {
+    opacity: 0; /* La opacidad final es 1 (visible) */
+    }
+}

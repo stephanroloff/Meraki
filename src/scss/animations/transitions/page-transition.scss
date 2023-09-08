@@ -1,0 +1,33 @@
+body {
+    // background-color: #202020 !important;
+    // background-color: #ffffff !important;
+
+    &.fade-out-black-to-white{
+        animation: blackToWhite 0.3s forwards; 
+    }
+}
+
+.main-container{
+
+    h1{
+        opacity: 0;
+    }
+  
+  &.fade-in {
+    h1{
+        animation: fadeIn 0.5s forwards; 
+    }
+  }
+  &.fade-out {
+    h1{
+        opacity: 1;
+        animation: fadeOut 0.5s forwards;
+        animation-delay: 0.1s; 
+    }
+  }
+
+}
+
+.custom-logo{
+    display: none;
+}

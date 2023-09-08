@@ -14,15 +14,20 @@
  * @since 1.0.0
  */
 
-require_once(__DIR__ . '/lib/enqueue-assets.php');  
-require_once(__DIR__ . '/lib/some-features.php');  
-require_once(__DIR__ . '/lib/body-open.php');  
-require_once(__DIR__ . '/lib/extra-styles-native-blocks.php'); 
-require_once(__DIR__ . '/lib/register-block-pattern-category.php'); 
-require_once(__DIR__ . '/lib/register-block-category.php'); 
-require_once(__DIR__ . '/lib/options-page.php'); 
-require_once(__DIR__ . '/lib/custom-post-types.php'); 
-require_once(__DIR__ . '/lib/prevent-unlocking-blocks.php'); 
+namespace MerakiTheme;
+require __DIR__ . '/vendor/autoload.php';
+
+$CPT_Projects = new CPT_Projects();
+$OptionsPage = new OptionsPage();
+$EnqueueAssets = new EnqueueAssets();
+$SomeFeatures = new SomeFeatures();
+$BodyOpen = new BodyOpen();
+$PreventUnlockingBlocks = new PreventUnlockingBlocks();
+$RegisterBlockCategory = new RegisterBlockCategory();
+$RegisterBlockPatternCategory = new RegisterBlockPatternCategory();
+$ExtraStylesNativeBlocks = new ExtraStylesNativeBlocks();
+
+
 
 
 

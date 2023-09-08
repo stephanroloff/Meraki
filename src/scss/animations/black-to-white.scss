@@ -1,0 +1,9 @@
+/* Define la animación de fade-in */
+@keyframes blackToWhite {
+    from {
+        background-color: #202020;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}

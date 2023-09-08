@@ -1,0 +1,14 @@
+{
+    "name": "theme/meraki",
+    "autoload": {
+        "psr-4": {
+            "MerakiTheme\\": "classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stephan"
+        }
+    ],
+    "require": {}
+}
