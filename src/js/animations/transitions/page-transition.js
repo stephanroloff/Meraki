@@ -21,7 +21,7 @@ setTimeout(function(){
     pagesBlack.forEach(element => {
         if(element.classList.contains('current_page_item'))
         {
-            console.log('Negro!!!');
+            console.log('Negro!!!!');
             mainContainer.classList.add("fade-in-black");
             mainContainer.classList.add("fade-in");
             // body.style.backgroundColor = '#202020'
